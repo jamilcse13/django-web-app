@@ -39,8 +39,12 @@
 - Create superuser:
     - python3 manage.py createsuperuser
 
+# Testing
 ## How to start writing test:
 - /*identifying*/ the bug creating the projrct
 - create test to /*expose*/ the bug
 - running the test
 - /*Fixing*/ the bug
+
+### Run test:
+- python3 manage.py test WebApp
