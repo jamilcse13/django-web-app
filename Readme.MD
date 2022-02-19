@@ -1,0 +1,21 @@
+## Commands:
+- create project:
+    - django-admin startproject project_name
+- create app:
+    - python3 manage.py startapp app_name
+- run server:
+    - python3 manage.py runserver
+- create virtual environment:
+    - virtualenv venv
+- active virtual env:
+    - . venv/bin/activate
+- install required features:
+    - write the features name in requirements.txt file
+    - pip install -r requirements.txt
+- table migration:
+    - python3 manage.py migrate
+- manual table migration:
+    - first write the migration inside app/models.py file and then
+    - python3 manage.py makemigrations app_name
+- to see the tables which i migrated:
+    - python3 manage.py sqlmigrate app_name 0001 (migration code)

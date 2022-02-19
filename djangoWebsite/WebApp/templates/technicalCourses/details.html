@@ -1,0 +1,10 @@
+{% if course.pk is 1 %}
+<h1><a href="https://www.google.com">{{ course.course_name }}</a></h1>
+<h2>{{ course.instructor_name }}</h2>
+{% elif course.pk is 2 %}
+<h1><a href="https://www.gmail.com">{{ course.course_name }}</a></h1>
+<h2>{{ course.instructor_name }}</h2>
+{% else %}
+<h1><a href="https://www.youtube.com">{{ course.course_name }}</a></h1>
+<h2>{{ course.instructor_name }}</h2>
+{% endif %}
