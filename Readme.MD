@@ -14,14 +14,14 @@
     - pip install -r requirements.txt
 - table migration:
     - python3 manage.py migrate
-- manual table migration:
-    - first write the migration inside app/models.py file and then
+### Manual table migration:
+- first write the migration inside app/models.py file and then
     - python3 manage.py makemigrations app_name
 - to see the tables which i migrated and geneated the migrations:
     - python3 manage.py sqlmigrate app_name 0001 (migration code)
-- after chang or update models.py, run those cmd
-    - python3 manage.py makemigrations app_name
-    - python3 manage.py migrate
+- after change or update models.py, run those cmd
+    - python3 manage.py makemigrations app_name (it will create migrations for those changes)
+    - python3 manage.py migrate (it will apply those changes to the database)
     - python3 manage.py sqlmigrate app_name 0001 (migration code)
 
 
