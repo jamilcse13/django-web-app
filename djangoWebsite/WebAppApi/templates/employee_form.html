@@ -1,0 +1,53 @@
+{% extends 'index.html' %}
+{% block title %}My Form{% endblock %}
+{% block content %}
+<h1 style="text-align: center; margin-top: 1rem;">My Form</h1>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6" style="margin: 0 auto;">
+            <form method="POST" action="{% url 'employee-create' %}">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="firstName" >First Name</label>
+                    <input type="text" class="form-control" name="firstName" id="firstName">
+                </div>
+                <div class="mb-3">
+                    <label for="lastName">My Textarea</label>
+                    <input type="text" class="form-control" name="lastName" id="lastName">
+                </div>
+                <div class="mb-3">
+                    <label for="empId">Employee ID</label>
+                    <input type="number" class="form-control" name="empId" id="empId">
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary" style="margin: 0 auto; display: block;">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+
+
+<div class="col-md-6" style="margin: 0 auto;">
+    <form method="POST" action="{% url 'employee-create' %}">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="firstName" >First Name</label>
+            <input type="text" class="form-control" name="firstName" id="firstName">
+        </div>
+        <div class="mb-3">
+            <label for="lastName">My Textarea</label>
+            <input type="text" class="form-control" name="lastName" id="lastName">
+        </div>
+        <div class="mb-3">
+            <label for="empId">Employee ID</label>
+            <input type="number" class="form-control" name="empId" id="empId">
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary" style="margin: 0 auto; display: block;">Submit</button>
+        </div>
+    </form>
+</div>
