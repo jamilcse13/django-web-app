@@ -17,6 +17,7 @@
 ### Manual table migration:
 - first write the migration inside app/models.py file and then
     - python3 manage.py makemigrations app_name
+    - python3 manage.py migrate
 - to see the tables which i migrated and geneated the migrations:
     - python3 manage.py sqlmigrate app_name 0001 (migration code)
 - after change or update models.py, run those cmd
@@ -41,10 +42,10 @@
 
 # Testing
 ## How to start writing test:
-- /*identifying*/ the bug creating the projrct
+- *identifying* the bug creating the projrct
 - create test to /*expose*/ the bug
 - running the test
-- /*Fixing*/ the bug
+- *Fixing* the bug
 
 ### Run test:
 - python3 manage.py test WebApp
